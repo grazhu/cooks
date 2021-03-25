@@ -1,0 +1,514 @@
+<html>
+<head> 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<style>
+    
+    .card-title {
+        font-family: 'Lato', sans-serif;
+        font-size: calc(1rem + 2.3vw);
+        /* font-size: 3.5rem;*/
+    }
+    
+    a {
+        color: grey; !important;
+    }
+    
+    a:hover {
+        color: black;
+    }
+    
+    .carousel-caption {
+        background-color: black;
+        opacity: 0.7;
+    }
+    
+    .carousel-indicators button{
+    display: inline-block;
+    width: 15vw !important;
+    height: 3px !important;
+    margin: 5px !important;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: white !important;
+    opacity: 0.5 !important;
+    /* box-shadow: inset 1px 1px 1px 1px hsla(0,100%,100%,0.5); */   
+    }
+    .carousel-indicators .active {
+        width: 15vw;
+        height: 3px;
+        margin: 5px;
+        background-color: white !important;
+        opacity: 1 !important;
+    } 
+    
+    .captionhover {
+        opacity: 0;
+    }
+    
+    @keyframes fadeOUT {
+        0% {opacity: 1};
+        100% {opacity: 0};
+    }
+    
+    .captioncover {
+        text-align:center; 
+        background-color: transparent;
+        user-select: none; 
+        border-radius: 50%;
+        color: transparent !important;
+    }
+    
+   .captioncover:hover {
+        background-color:hsla(0, 0%, 0%, 0.5) !important; 
+        color: white !important;
+    }
+</style>    
+<body>
+	<header> 
+
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <!-- a class="navbar-brand" href="#">Navbar</a -->
+             <!-- Just an image -->
+                <a class="navbar-brand ms-3" href="#">
+                  <img src="https://hue.humspace.ucla.edu/Chef_Farid_Logo.jpg" alt="chef-farid logo" width="100" height="100">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav me-auto">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#menus">Menus</a>
+                <a class="nav-link" href="#about">About</a>
+                
+              </div>
+                <form class="d-flex me-5 mb-2">
+                  <button type="button" class="btn btn-dark"  href="tel:+17144677280"> <i class="bi bi-telephone-fill"></i> Contact</button> 
+                </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+
+    
+<section id="features" class="mt-2 ms-0 me-0">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <!-- button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button -->
+      </div>
+      <div class="carousel-inner text-white">
+        <!--div class="carousel-item active" data-bs-interval="5000">
+          <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/Hero1-Veg.png" class="img-fluid w-100" alt="morrocan food">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Explore Chef Farid's cuisine</h5>
+            <p>Made with California's freshest ingredients</p>
+          </div>
+        </div -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/Italian_table.jpg" class="img-fluid w-100" alt="italian food">
+            
+            
+          <!-- div class="carousel-caption d-none d-md-block text-white">
+            <h5>Italian</h5>
+            <p>Enjoy delicious food</p>
+          </div -->
+            
+        <div class="card-img-overlay p-2" style="text-align:center; margin-top: 40vmin; background-color:hsla(0, 0%, 0%, 0.75)">
+        <h5 class="card-title m-0">Italian</h5><br>
+        <p class="card-text m-0">Made with California's freshest ingredients</p>
+      </div>
+            
+            
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/moroccan_table.jpg" class="img-fluid w-100" alt="mediterranian food">
+          <!--div class="carousel-caption d-none d-md-block text-white">
+            <h5>Moroccan</h5>
+            <p>The roots of Chef Farid's culinary experience</p>
+          </div-->
+            
+        <div class="card-img-overlay p-2" style="text-align:center; margin-top: 40vmin; background-color:hsla(0, 0%, 0%, 0.75)">
+        <h5 class="card-title m-0">Moroccan</h5><br>
+        <p class="card-text m-0">The roots of Chef Farid's culinary experience</p>
+      </div>
+            
+        </div> 
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+</section>
+    
+    
+<section id="services" class="m-5"> 
+   <div class="card mb-3 border-0">
+  <div class="row gx-5">
+    <div class="col-md-6">
+      <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/private_chef_decorative.jpg" class="img-fluid d-none d-md-block" alt="">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">Private Chef</h5>
+        <p class="card-text">Experience the unique blend of Chef Farid&#39;s culinary craft right in the comfort of your own home. We&#39;ll partner with you to accommodate your dietary needs and deliver a one-of-a-kind dining experience. Contact us today to get started!.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="card mb-3 border-0" >
+  <div class="row gx-5">
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">Catering</h5>
+        <p class="card-text">Turn any event or gathering into a true celebration with catering by Chef Farid. Our catering menu is fully customizable and made to fit any occassion. Contact us today for a free consultation!</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/catering_service_decorative.jpg" class="img-fluid d-none d-md-block" alt="">
+      
+    </div>
+  </div>
+</div>
+</section>    
+    
+    
+<section id="menus" class="mt-5 mb-5 w-100 pb-5" style="background-color: hsl(25, 30%, 11%);"> 
+    
+<div class="card text-center text-white border-bottom-0 border-start-0 border-end-0" style="background-color: transparent">
+
+      <div class="card-body p-5">
+        <h5 class="card-title">Chef Farid's Special Menus</h5>
+        <p class="card-text"></p>
+      </div>
+
+</div>
+    
+<div class="row row-cols-1 row-cols-md-5 g-4 mt-2 ms-5 me-5 mb-5" style="background-color: transparent;">
+      <div class="col">
+        <div class="card border-0 p-2" style="background-color: transparent">
+
+
+
+          <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/TomatoPasta.png" class="card-img-top rounded-circle"  alt="TomatoPasta">
+            
+
+            <div id="TomatoPastaCaption" class="card-img-overlay text-white captioncover">
+                    
+                <h5 class="mt-3"> Tomato Pasta </h5>
+
+            </div>
+      
+
+      </div>
+            
+        
+    </div>
+    
+<div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+      <img src="https://hue.humspace.ucla.edu/project-chef-farid/review-0313-2021/couscous.png"  class="card-img-top rounded-circle" alt="couscous">
+        
+    <div id="CouscousCaption" class="card-img-overlay captioncover" >
+                    
+                <h5 class="mt-3"> Lamb Couscous </h5>
+                <!-- small class="p-2 d-md-none d-lg-block"> <br> a flavorful Lamb shank and seven vegetable and legumes (kabocha squash, zucchinis, carrots, turnips, cabbage, fava beans, and garbanzo beans) slow cooked and served on a bed of cous-cous </small -->
+
+    </div>
+    </div>
+    
+  </div>
+    
+    <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/beef_and_plum_tajing2.jpg"  class="card-img-top rounded-circle" alt="beef-and-plum-tajing">
+        
+     <div id="BeefPlumTajingCaption" class="card-img-overlay captioncover" >
+                    
+                <h5 class="mt-3"> Beef &amp; Plum Tajing </h5>
+
+    </div>
+        
+    </div>
+        </div>
+        
+    <!--<div class="col">
+    <div class="card border-0">
+     <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/antioxient_soup.png"  class="card-img-top rounded-circle" alt="Antioxidant-soup">
+    </div>
+  </div> 
+    
+  <div class="col">
+    <div class="card border-0">
+      <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/apple_crumble.png"  class="card-img-top rounded-circle" alt="apple-crumble">
+    </div>
+ </div> -->
+        
+    <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/chicken_taco.png"  class="card-img-top rounded-circle" alt="chicken-taco">
+        
+    <div id="ChickenTacoCaption" class="card-img-overlay text-white captioncover" >
+                    
+        <h5 class="mt-3"> Chicken Taco </h5>
+
+    </div>
+        
+    </div>
+        </div>
+      
+     <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/pear_cake2.png"  class="card-img-top rounded-circle" alt="pear-cake" >
+        <div id="PearCakeCaption" class="card-img-overlay text-white captioncover" >
+                    
+                <h5 class="mt-3"> Pear Cake </h5>
+
+    </div>
+    </div>   
+         </div>
+    
+     <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/salmon_and_salad.png"  class="card-img-top rounded-circle" alt="Salmon-and-salad">
+        <div id="SalmonSaladCaption" class="card-img-overlay text-white captioncover" captioncover>
+                    
+                <h5 class="mt-3"> Salmon Salad </h5>
+
+    </div>
+    </div>   
+         </div>
+    
+        <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/spinach_side.jpg"  class="card-img-top rounded-circle" alt="spinach-side">
+        <div id="BeefPlumTajingCaption" class="card-img-overlay text-white captioncover" >
+                    
+                <h5 class="mt-3"> Spinach Side </h5>
+
+    </div>
+    </div>  
+            </div>
+      <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/veggie_stew.png"  class="card-img-top rounded-circle" alt="veggie-stew">
+        <div id="VeggieStewCaption" class="card-img-overlay text-white captioncover" >
+                    
+                <h5 class="mt-3"> Veggie Stew </h5>
+
+    </div>
+    </div>       
+        </div> 
+    
+          <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/apple_crumble.png"  class="card-img-top rounded-circle" alt="apple crumble">
+        <div id="VeggieStewCaption" class="card-img-overlay text-white captioncover" >
+                    
+                <h5 class="mt-3"> Apple Crumble </h5>
+
+    </div>
+    </div>       
+        </div> 
+    
+          <div class="col">
+    <div class="card border-0 p-2" style="background-color: transparent">
+     <img src="https://hue.humspace.ucla.edu/project-chef-farid/final_0317_2021/pumpkin_soup2.png"  class="card-img-top rounded-circle" alt="pumpkin soup">
+        <div id="VeggieStewCaption" class="card-img-overlay text-white captioncover" >
+                    
+                <h5 class="mt-3"> Pumpkin Soup </h5>
+
+    </div>
+    </div>       
+        </div> 
+    
+    </div> 
+    
+
+</section>  
+
+
+    
+<!--section id="about" class="m-5">
+    <div id="carousel-aboutFarid" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-aboutFarid" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-aboutFarid" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-aboutFarid" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel-aboutFarid" data-bs-slide-to="3" aria-label="Slide 4"></button> 
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="false">
+          <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/Farid_child.jpg" class="d-block w-100" alt="farid-child">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Chef Farid in his youth (right) </h5>
+            <p>Chef Farid first learned how to cook Morcoccan food with his father as a child in Italy. </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="false">
+          <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/Morocco.jpg" class="d-block w-100" alt="morocco">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Morocco</h5>
+            <p>Chef Farid explored the culinary world through Moroccan food</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="false">
+          <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/Florence.jpg" class="d-block w-100" alt="florence">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Florence</h5>
+            <p>After hospitality school, he began cooking Italian food at restaurants in Florence </p>
+          </div>
+        </div>
+          <div class="carousel-item" data-bs-interval="false">
+          <img src="https://raw.githubusercontent.com/grazhu/ChefFarid/main/California.jpg" class="d-block w-100" alt="california">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>California</h5>
+            <p>Chef Farid has been working in the U.S. for 6 years cooking Italian and Mediterranean food</p>
+          </div>
+        </div> 
+      </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-aboutFarid"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-aboutFarid"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> 
+    </div>
+    
+</section -->
+    
+    
+<section id="about" class="m-5"> 
+    <div class="card text-center pt-5 border-0">
+        <h2 class="card-title">More About the Chef</h2>
+    </div>
+    
+    <div class="card mb-3 border-0">
+      <div class="row gx-5">
+        <div class="col-md-6 m-auto">
+          <img class="p-2 img-fluid" src="https://hue.humspace.ucla.edu/Chef_Farid_Logo.jpg" alt="farid-image" >
+        </div>
+        <div class="col-md-6">
+          <div class="card-body"><br><br><br>
+            <p class="card-text">Chef Farid first fell in love with cooking when he was a young boy in Morocco. He would often spend time in the kitchen with his mother helping her prepare food for the family. The love that mom would put in her cooking is the secret ingredient of Chef Farid&#39;s dishes today. <br><br>
+
+            When he was a teen, Farid moved to Florence, Italy. He learned to prepare Tuscan cuisine along side the best Florentine chefs and in 2010 he opened his own restaurant, where he was able to blend his Moroccan roots with Italian classics. <br><br>
+
+            Today Chef Farid enjoys bringing together friends and families at the table while sharing his unique and delicious culinary style.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    
+    
+
+ <section id="contact" class="m-5"> 
+    <div class="card text-center p-5 border-bottom-0 border-start-0 border-end-0">
+        <h2 class="card-title">Contact Us</h2>
+        <p class="card-text">Have any questions or comments? Share your thoughts with us below!</p>
+    </div>
+
+    <form class="row g-3">
+      <div class="col-md-4"> 
+        
+        
+          
+        <p class="card-text">
+        Chef Farid<br>
+        Orange County, CA<br></p>
+        <address class="card-text">
+          <a href="mailto:jim@rock.com" class="text-decoration-none"><i class="bi bi-envelope-fill"></i> cheffaridcooks@gmail.com</a><br>
+          <a href="tel:+17144677280" class="text-decoration-none"><i class="bi bi-telephone-fill"></i> (714)-467-7280</a>
+        
+        </address>
+        
+      </div> 
+
+      <div class="col-md-4">
+        <label for="inputFName" class="form-label">First Name</label>
+        <input type="firstname" class="form-control" id="inputFName">
+      </div>
+      <div class="col-md-4">
+        <label for="inputLName" class="form-label">Last Name</label>
+        <input type="lastname" class="form-control" id="inputLName">
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-8">
+        <label for="inputEmail" class="form-label">Email Address*</label>
+        <input type="email" class="form-control" id="inputEmail">
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-8">
+        <label for="inputMessage" class="form-label">Message*</label>
+        <input type="text" class="form-control p-5" id="inputMessage" placeholder="">
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-8"><br>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </div>
+    </form>    
+</section>   
+
+    
+	<footer> 
+        <nav class="nav nav-pills flex-column flex-sm-row">
+          <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#features">Features</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="#services">Services</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="#menus">Menu Suggestions</a>
+           <a class="flex-sm-fill text-sm-center nav-link" href="#about">About Chef-Farid</a>
+        </nav>
+        
+        <nav class="m-5" aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            
+            <li class="page-item "><a class="page-link border-0" href="https://www.facebook.com/chef.farid.cooks" target="_blank"><i class="bi bi-facebook" style="font-size: 2rem; color: darkslategrey"></i></a></li>
+            <li class="page-item"><a class="page-link border-0" href="https://www.instagram.com/chef.farid.cooks/" target="_blank"><i class="bi bi-instagram" style="font-size: 2rem; color: darkslategrey"></i></a></li>
+            <!-- li class="page-item"><a class="page-link border-0" href="#" target="_blank"><i class="bi bi-twitter" style="font-size: 2rem; color: darkslategrey"></i></a></li>
+            <li class="page-item"><a class="page-link border-0" href="#" target="_blank"><i class="bi bi-youtube" style="font-size: 2rem;color: darkslategrey"></i></a></li -->
+              
+          </ul>
+        </nav>
+        
+        
+        <p class="text-center bg-dark text-white p-3 mb-0">
+            <small> copyright&copy; 2021 Chef-Farid + HUE </small>
+        </p>
+        
+    </footer>
+
+<script>
+
+</script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
